@@ -3,7 +3,6 @@ package com.example.learnopengl;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
 import com.example.learnopengl.databinding.ActivityMainBinding;
 
@@ -24,13 +23,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         // Example of a call to a native method
-        TextView tv = binding.sampleText;
-        tv.setText(stringFromJNI());
+        OpenGLView glView = binding.openglView;
+        glView.init();
     }
 
     /**
      * A native method that is implemented by the 'learnopengl' native library,
      * which is packaged with this application.
      */
-    public native String stringFromJNI();
+    public static native void onSurfaceCreated();
+    public static native void onSurfaceChanged(int width, int height);
+    public static native void onDrawFrame();
 }

@@ -9,6 +9,9 @@ cmake_minimum_required(VERSION 3.22.1)
 
 project("learnopengl")
 
+# 源文件
+file(GLOB_RECURSE SRC_LIST "*.cpp" "*.cc" "*.c") #递归搜索
+
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
 # You can define multiple libraries, and CMake builds them for you.
@@ -21,7 +24,7 @@ add_library( # Sets the name of the library.
         SHARED
 
         # Provides a relative path to your source file(s).
-        native-lib.cpp)
+        ${SRC_LIST})
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
@@ -45,4 +48,5 @@ target_link_libraries( # Specifies the target library.
 
         # Links the target library to the log library
         # included in the NDK.
-        ${log-lib})
+        ${log-lib}
+        GLESv2)

@@ -1,10 +1,18 @@
+#if __ANDROID__
 #include <jni.h>
-#include <string>
+#include "OpenGL.h"
 
-extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_learnopengl_MainActivity_stringFromJNI(
-        JNIEnv* env,
-        jobject /* this */) {
-    std::string hello = "Hello from C++ 2";
-    return env->NewStringUTF(hello.c_str());
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_learnopengl_MainActivity_onSurfaceCreated(JNIEnv *env, jclass clazz) {
+    OpenGL::onSurfaceCreated();
 }
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_learnopengl_MainActivity_onSurfaceChanged(JNIEnv *env, jclass clazz, jint width, jint height) {
+    OpenGL::onSurfaceChanged(width, height);
+}
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_learnopengl_MainActivity_onDrawFrame(JNIEnv *env, jclass clazz) {
+    OpenGL::onDrawFrame();
+}
+
+#endif
