@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.glView = [[OpenGLView alloc] initWithFrame:CGRectMake(0, 20, 375, 375)];
+    self.glView = [[OpenGLView alloc] init];
+    self.glView.frame = CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.width);
     [self.view addSubview:self.glView];
 }
 

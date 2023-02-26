@@ -5,6 +5,8 @@
 #include "OpenGL.h"
 #if __ANDROID__
 #include <GLES2/gl2.h>
+#elif __APPLE__
+#include <OpenGLES/ES2/gl.h>
 #endif
 
 void OpenGL::onSurfaceCreated() {

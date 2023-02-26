@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C2C727A29AA3318001A13BA /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C727629AA3318001A13BA /* CMakeLists.txt */; };
+		3C2C727B29AA3318001A13BA /* native-lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C727829AA3318001A13BA /* native-lib.cpp */; };
+		3C2C727C29AA3318001A13BA /* OpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C727929AA3318001A13BA /* OpenGL.cpp */; };
+		3C2C728029AA3496001A13BA /* OpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C727F29AA3496001A13BA /* OpenGLView.mm */; };
 		9AB2B2CE29909B7A00B48B15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2B2CD29909B7A00B48B15 /* AppDelegate.m */; };
 		9AB2B2D129909B7A00B48B15 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2B2D029909B7A00B48B15 /* SceneDelegate.m */; };
 		9AB2B2D429909B7A00B48B15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2B2D329909B7A00B48B15 /* ViewController.m */; };
@@ -15,12 +19,15 @@
 		9AB2B2DC29909B7C00B48B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2B2DA29909B7C00B48B15 /* LaunchScreen.storyboard */; };
 		9AB2B2DF29909B7C00B48B15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2B2DE29909B7C00B48B15 /* main.m */; };
 		9AB2B2E729909B8F00B48B15 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB2B2E629909B8F00B48B15 /* GLKit.framework */; };
-		9AB2B2EA29909BA400B48B15 /* OpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2B2E929909BA400B48B15 /* OpenGLView.mm */; };
-		9AB2B2ED29909D2C00B48B15 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2B2EB29909D2C00B48B15 /* vertex.glsl */; };
-		9AB2B2EE29909D2C00B48B15 /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2B2EC29909D2C00B48B15 /* fragment.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C2C727629AA3318001A13BA /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		3C2C727729AA3318001A13BA /* OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGL.h; sourceTree = "<group>"; };
+		3C2C727829AA3318001A13BA /* native-lib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "native-lib.cpp"; sourceTree = "<group>"; };
+		3C2C727929AA3318001A13BA /* OpenGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGL.cpp; sourceTree = "<group>"; };
+		3C2C727E29AA3496001A13BA /* OpenGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		3C2C727F29AA3496001A13BA /* OpenGLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLView.mm; sourceTree = "<group>"; };
 		9AB2B2C929909B7A00B48B15 /* LearnOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB2B2CC29909B7A00B48B15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AB2B2CD29909B7A00B48B15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,12 +41,6 @@
 		9AB2B2DD29909B7C00B48B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB2B2DE29909B7C00B48B15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AB2B2E629909B8F00B48B15 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		9AB2B2E829909BA400B48B15 /* OpenGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
-		9AB2B2E929909BA400B48B15 /* OpenGLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLView.mm; sourceTree = "<group>"; };
-		9AB2B2EB29909D2C00B48B15 /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
-		9AB2B2EC29909D2C00B48B15 /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
-		9AB2B2EF29909D4200B48B15 /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
-		9AB2B2F22990DD2000B48B15 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C2C727529AA3318001A13BA /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C727629AA3318001A13BA /* CMakeLists.txt */,
+				3C2C727829AA3318001A13BA /* native-lib.cpp */,
+				3C2C727929AA3318001A13BA /* OpenGL.cpp */,
+				3C2C727729AA3318001A13BA /* OpenGL.h */,
+			);
+			name = cpp;
+			path = ../../Android/app/src/main/cpp;
+			sourceTree = "<group>";
+		};
+		3C2C727D29AA3426001A13BA /* oc */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C727E29AA3496001A13BA /* OpenGLView.h */,
+				3C2C727F29AA3496001A13BA /* OpenGLView.mm */,
+			);
+			path = oc;
+			sourceTree = "<group>";
+		};
 		9AB2B2C029909B7A00B48B15 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +96,8 @@
 		9AB2B2CB29909B7A00B48B15 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				3C2C727529AA3318001A13BA /* cpp */,
+				3C2C727D29AA3426001A13BA /* oc */,
 				9AB2B2CC29909B7A00B48B15 /* AppDelegate.h */,
 				9AB2B2CD29909B7A00B48B15 /* AppDelegate.m */,
 				9AB2B2CF29909B7A00B48B15 /* SceneDelegate.h */,
@@ -85,12 +109,6 @@
 				9AB2B2DA29909B7C00B48B15 /* LaunchScreen.storyboard */,
 				9AB2B2DD29909B7C00B48B15 /* Info.plist */,
 				9AB2B2DE29909B7C00B48B15 /* main.m */,
-				9AB2B2E829909BA400B48B15 /* OpenGLView.h */,
-				9AB2B2E929909BA400B48B15 /* OpenGLView.mm */,
-				9AB2B2EB29909D2C00B48B15 /* vertex.glsl */,
-				9AB2B2EC29909D2C00B48B15 /* fragment.glsl */,
-				9AB2B2EF29909D4200B48B15 /* Shader.hpp */,
-				9AB2B2F22990DD2000B48B15 /* stb_image.h */,
 			);
 			path = LearnOpenGL;
 			sourceTree = "<group>";
@@ -160,9 +178,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB2B2EE29909D2C00B48B15 /* fragment.glsl in Resources */,
 				9AB2B2DC29909B7C00B48B15 /* LaunchScreen.storyboard in Resources */,
-				9AB2B2ED29909D2C00B48B15 /* vertex.glsl in Resources */,
+				3C2C727A29AA3318001A13BA /* CMakeLists.txt in Resources */,
 				9AB2B2D929909B7C00B48B15 /* Assets.xcassets in Resources */,
 				9AB2B2D729909B7A00B48B15 /* Main.storyboard in Resources */,
 			);
@@ -177,9 +194,11 @@
 			files = (
 				9AB2B2D429909B7A00B48B15 /* ViewController.m in Sources */,
 				9AB2B2CE29909B7A00B48B15 /* AppDelegate.m in Sources */,
+				3C2C727B29AA3318001A13BA /* native-lib.cpp in Sources */,
 				9AB2B2DF29909B7C00B48B15 /* main.m in Sources */,
 				9AB2B2D129909B7A00B48B15 /* SceneDelegate.m in Sources */,
-				9AB2B2EA29909BA400B48B15 /* OpenGLView.mm in Sources */,
+				3C2C727C29AA3318001A13BA /* OpenGL.cpp in Sources */,
+				3C2C728029AA3496001A13BA /* OpenGLView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,20 +1,20 @@
 //
-//  OpenGLView.m
+//  TestView.m
 //  LearnOpenGL
 //
 //  Created by TomWang on 2023/2/6.
 //
 
-#import "OpenGLView.h"
+#import "TestView.h"
 #import <GLKit/GLKit.h>
 #import <OpenGLES/ES2/gl.h>
 #import "Shader.hpp"
 
-@interface OpenGLView () <GLKViewDelegate>
+@interface TestView () <GLKViewDelegate>
 @property (nonatomic, strong) GLKView *glkView;
 @end
 
-@implementation OpenGLView
+@implementation TestView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
