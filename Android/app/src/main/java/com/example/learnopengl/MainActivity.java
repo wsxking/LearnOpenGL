@@ -2,6 +2,7 @@ package com.example.learnopengl;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.AssetManager;
 import android.os.Bundle;
 
 import com.example.learnopengl.databinding.ActivityMainBinding;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
      * A native method that is implemented by the 'learnopengl' native library,
      * which is packaged with this application.
      */
-    public static native void onSurfaceCreated();
+    public static native void onSurfaceCreated(AssetManager assetManager);
     public static native void onSurfaceChanged(int width, int height);
     public static native void onDrawFrame();
 }

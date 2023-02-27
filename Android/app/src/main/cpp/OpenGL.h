@@ -6,10 +6,11 @@
 #define LEARNOPENGL_OPENGL_H
 
 #include <stdio.h>
+#include "class/AssetManager.hpp"
 
 class OpenGL {
 public:
-    static void onSurfaceCreated();
+    static void onSurfaceCreated(AppAssetManager appAssetManager);
     static void onSurfaceChanged(int width, int height);
     static void onDrawFrame();
 };

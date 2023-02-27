@@ -11,6 +11,7 @@
 		3C2C727B29AA3318001A13BA /* native-lib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C727829AA3318001A13BA /* native-lib.cpp */; };
 		3C2C727C29AA3318001A13BA /* OpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C727929AA3318001A13BA /* OpenGL.cpp */; };
 		3C2C728029AA3496001A13BA /* OpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C727F29AA3496001A13BA /* OpenGLView.mm */; };
+		9A8E7A7229AC819200193FAB /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8E7A7129AC819200193FAB /* assets */; };
 		9AB2B2CE29909B7A00B48B15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2B2CD29909B7A00B48B15 /* AppDelegate.m */; };
 		9AB2B2D129909B7A00B48B15 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2B2D029909B7A00B48B15 /* SceneDelegate.m */; };
 		9AB2B2D429909B7A00B48B15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2B2D329909B7A00B48B15 /* ViewController.m */; };
@@ -28,6 +29,10 @@
 		3C2C727929AA3318001A13BA /* OpenGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGL.cpp; sourceTree = "<group>"; };
 		3C2C727E29AA3496001A13BA /* OpenGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
 		3C2C727F29AA3496001A13BA /* OpenGLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLView.mm; sourceTree = "<group>"; };
+		9A8E7A7129AC819200193FAB /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../Android/app/src/main/assets; sourceTree = "<group>"; };
+		9A8E7A7429AC828400193FAB /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
+		9A8E7A7729AC854D00193FAB /* AssetManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AssetManager.hpp; sourceTree = "<group>"; };
+		9A8E7A7829AC8DE700193FAB /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		9AB2B2C929909B7A00B48B15 /* LearnOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB2B2CC29909B7A00B48B15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AB2B2CD29909B7A00B48B15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +67,8 @@
 				3C2C727829AA3318001A13BA /* native-lib.cpp */,
 				3C2C727929AA3318001A13BA /* OpenGL.cpp */,
 				3C2C727729AA3318001A13BA /* OpenGL.h */,
+				9A8E7A7329AC825D00193FAB /* class */,
+				9A8E7A7529AC82A700193FAB /* stb_image */,
 			);
 			name = cpp;
 			path = ../../Android/app/src/main/cpp;
@@ -74,6 +81,23 @@
 				3C2C727F29AA3496001A13BA /* OpenGLView.mm */,
 			);
 			path = oc;
+			sourceTree = "<group>";
+		};
+		9A8E7A7329AC825D00193FAB /* class */ = {
+			isa = PBXGroup;
+			children = (
+				9A8E7A7729AC854D00193FAB /* AssetManager.hpp */,
+				9A8E7A7429AC828400193FAB /* Shader.hpp */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		9A8E7A7529AC82A700193FAB /* stb_image */ = {
+			isa = PBXGroup;
+			children = (
+				9A8E7A7829AC8DE700193FAB /* stb_image.h */,
+			);
+			path = stb_image;
 			sourceTree = "<group>";
 		};
 		9AB2B2C029909B7A00B48B15 = {
@@ -96,6 +120,7 @@
 		9AB2B2CB29909B7A00B48B15 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				9A8E7A7129AC819200193FAB /* assets */,
 				3C2C727529AA3318001A13BA /* cpp */,
 				3C2C727D29AA3426001A13BA /* oc */,
 				9AB2B2CC29909B7A00B48B15 /* AppDelegate.h */,
@@ -178,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8E7A7229AC819200193FAB /* assets in Resources */,
 				9AB2B2DC29909B7C00B48B15 /* LaunchScreen.storyboard in Resources */,
 				3C2C727A29AA3318001A13BA /* CMakeLists.txt in Resources */,
 				9AB2B2D929909B7C00B48B15 /* Assets.xcassets in Resources */,

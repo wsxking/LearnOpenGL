@@ -17,7 +17,8 @@
         [EAGLContext setCurrentContext:self.context];
         
         NSLog(@"[OpenGLView] onSurfaceCreated");
-        OpenGL::onSurfaceCreated();
+        NSString *assets = [NSBundle.mainBundle pathForResource:@"assets" ofType:nil];
+        OpenGL::onSurfaceCreated(std::string(assets.UTF8String));
     }
     return self;
 }

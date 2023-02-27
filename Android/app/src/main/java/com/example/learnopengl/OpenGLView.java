@@ -27,7 +27,7 @@ public class OpenGLView extends GLSurfaceView {
             @Override
             public void onSurfaceCreated(GL10 gl10, EGLConfig eglConfig) {
                 Log.d(TAG, "onSurfaceCreated: " + Thread.currentThread());
-                MainActivity.onSurfaceCreated();
+                MainActivity.onSurfaceCreated(getContext().getAssets());
             }
 
             @Override
